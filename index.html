@@ -1,1 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Display</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <h1>Upload and Display File Contents</h1>
+    
+    <div class="container">
+        <div class="file-upload">
+            <label for="fileInput1">Select File 1:</label>
+            <input type="file" id="fileInput1" accept=".txt" />
+            <div class="file-display" id="fileDisplay1">File 1 content will appear here...</div>
+
+            <label for="fileInput2">Select File 2:</label>
+            <input type="file" id="fileInput2" accept=".txt" />
+            <div class="file-display" id="fileDisplay2">File 2 content will appear here...</div>
+        </div>
+
+        <div class="file-upload">
+            <h2>Combined Output Display</h2>
+            <div class="file-display" id="combinedOutput">Combined output will appear here...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
